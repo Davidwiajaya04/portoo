@@ -650,7 +650,7 @@
 
 /* Nama sekolah */
 .timeline-text h3 {
-    font-size: 1.45rem;
+    font-size: 3.45rem;
     font-weight: 700;
     color: #111827;
     margin-bottom: 6px;
@@ -667,7 +667,7 @@
 
 /* Deskripsi */
 .timeline-text p {
-    font-size: 1rem;
+    font-size: 3rem;
     line-height: 1.75;
     color: #374151;
     max-width: 720px;
@@ -725,7 +725,7 @@
     }
 
     .timeline-item .timeline-text p {
-        font-size: 0.72rem;
+        font-size: 0.80rem;
         line-height: 1.5;
     }
 }
