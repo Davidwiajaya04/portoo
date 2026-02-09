@@ -650,7 +650,7 @@
 
 /* Nama sekolah */
 .timeline-text h3 {
-    font-size: 3.45rem;
+    font-size: 7.45rem;
     font-weight: 700;
     color: #111827;
     margin-bottom: 6px;
@@ -658,7 +658,7 @@
 
 /* Tahun — DI BAWAH NAMA SEKOLAH */
 .timeline-text .timeline-date {
-    font-size: 1rem;
+    font-size: 7rem;
     font-weight: 600;
     color: #374151;
     margin-bottom: 14px;
@@ -667,7 +667,7 @@
 
 /* Deskripsi */
 .timeline-text p {
-    font-size: 3rem;
+    font-size: 7rem;
     line-height: 1.75;
     color: #374151;
     max-width: 720px;
@@ -701,8 +701,8 @@
     /* LOGO — WAJIB DI ATAS */
     .timeline-item .timeline-content img {
         display: block !important;
-        width: 60px;
-        height: 60px;
+        width: 90px;
+        height: 90px;
         margin-bottom: 6px;
     }
 
@@ -719,13 +719,13 @@
     }
 
     .timeline-item .timeline-text .timeline-date {
-        font-size: 0.85rem;
+        font-size: 0.90rem;
         font-weight: 700;
         margin-bottom: 6px;
     }
 
     .timeline-item .timeline-text p {
-        font-size: 0.80rem;
+        font-size: 0.90rem;
         line-height: 1.5;
     }
 }
