@@ -674,76 +674,84 @@
 }
 
 /* =========================
-   MOBILE — RESPONSIVE FIX (FINAL)
+   MOBILE — RESPONSIVE CLEAN FIX
 ========================= */
 @media (max-width: 768px) {
 
+    /* Judul section */
     .section-title {
-        font-size: 1.8rem;
-        margin-bottom: 40px;
+        font-size: 1.7rem;
+        margin-bottom: 36px;
         text-align: center;
     }
 
     /* Garis timeline */
     .timeline::before {
-        left: 10px;
+        left: 12px;
+        width: 2px;
+    }
+
+    .timeline-item {
+        margin-bottom: 28px;
     }
 
     .timeline-dot {
         width: 12px;
         height: 12px;
-        left: 4px;
-        top: 24px;
+        left: 6px;
+        top: 22px;
         border-width: 3px;
     }
 
-    /* 🔥 PENTING: UBAH KE COLUMN */
+    /* CARD */
     .timeline-content {
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;   /* JANGAN center */
-        margin-left: 40px;
-        padding: 16px;
-        gap: 12px;
-        border-left-width: 4px;
+        align-items: flex-start;
+        margin-left: 44px;
+        padding: 16px 16px 18px;
+        gap: 10px;
+
+        /* ⛔ MATIKAN STYLE DESKTOP */
+        border-left: none;
+        min-height: unset;
     }
 
-    /* Gambar di atas */
+    /* Logo */
     .timeline-content img {
-        width: 70px;
-        height: 70px;
+        width: 64px;
+        height: 64px;
         padding: 8px;
         border-radius: 12px;
+        margin-bottom: 4px;
     }
 
-    /* Text wrapper */
+    /* Text */
     .timeline-text {
         width: 100%;
         text-align: left;
     }
 
-    /* Nama sekolah */
     .timeline-text h3 {
         font-size: 0.95rem;
         font-weight: 600;
-        margin-bottom: 4px;
+        margin-bottom: 2px;
     }
 
-    /* Tahun — BESAR & BOLD (HP SAJA) */
     .timeline-text .timeline-date {
-        display: block;
         font-size: 0.85rem;
         font-weight: 700;
         margin-bottom: 6px;
-        color: #1f2933;
+        color: #1f2937;
     }
 
-    /* Deskripsi — DIPERKECIL */
     .timeline-text p {
         font-size: 0.72rem;
         line-height: 1.5;
         color: #4b5563;
     }
 }
+
 
 
 /* Masonry Grid */
