@@ -650,29 +650,29 @@
 
 
 /* =========================
-   MOBILE FINAL FIX
+   MOBILE REFINEMENT FINAL
 ========================= */
 @media (max-width: 768px) {
 
-    /* Garis timeline → geser lebih ke kiri */
+    /* Geser garis lebih ke kiri */
     .timeline::before {
-        left: 6px;
+        left: 4px;
     }
 
     /* Titik timeline */
     .timeline-dot {
-        width: 14px;
-        height: 14px;
-        left: -1px;
-        top: 24px;
+        width: 12px;
+        height: 12px;
+        left: -2px;
+        top: 22px;
         border-width: 3px;
     }
 
-    /* Card konten → JARAK DARI GARIS DITAMBAH */
+    /* Card → JARAK DIPERLEBAR */
     .timeline-content {
         display: flex;
         flex-direction: column;
-        margin-left: 42px;            /* 🔥 JARAK KE GARIS */
+        margin-left: 54px;          /* 🔥 LEBIH JAUH DARI GARIS */
         padding: 12px 14px;
         gap: 6px;
         border-radius: 14px;
@@ -680,21 +680,22 @@
 
     /* Logo */
     .timeline-content img {
-        width: 64px;                  /* 🔥 lebih kecil */
-        height: 64px;
+        width: 60px;
+        height: 60px;
+        padding: 6px;
         object-fit: contain;
         border-radius: 10px;
         margin-bottom: 4px;
     }
 
-    /* Wrapper teks */
+    /* Text wrapper */
     .timeline-text {
         width: 100%;
     }
 
     /* Judul */
     .timeline-text h3 {
-        font-size: 0.85rem;           /* 🔥 lebih kecil */
+        font-size: 0.82rem;
         font-weight: 600;
         line-height: 1.25;
         margin-bottom: 2px;
@@ -702,19 +703,20 @@
 
     /* Tahun */
     .timeline-date {
-        font-size: 0.65rem;           /* 🔥 lebih kecil */
+        font-size: 0.62rem;
         margin-bottom: 4px;
         color: #6b7280;
     }
 
-    /* Deskripsi */
+    /* Deskripsi → LEBIH KECIL & RAPI */
     .timeline-text p {
-        font-size: 0.75rem;           /* 🔥 JELAS LEBIH KECIL */
-        line-height: 1.45;
+        font-size: 0.72rem;        /* 🔥 DIPERKECIL LAGI */
+        line-height: 1.4;
         color: #374151;
         margin-top: 2px;
     }
 }
+
 
 
 /* Masonry Grid */
