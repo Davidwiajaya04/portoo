@@ -1219,6 +1219,25 @@
         margin-top: 10px;
     }
 }
+@media (max-width: 576px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr); /* 🔥 1 layar = 2 kotak */
+        gap: 14px;
+    }
+
+    .portfolio-card {
+        padding: 16px 12px;
+        border-radius: 12px;
+    }
+
+    .section-5-text {
+        font-size: 13px;
+    }
+
+    .section-5-icon i {
+        font-size: 18px;
+    }
+}
 
 
 /* SECTION NO 7 */
