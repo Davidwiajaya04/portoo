@@ -698,9 +698,9 @@
     /* Mobile layout → kecil & rapi */
     .timeline-content {
         display: flex;
-        gap: 12px;
-        align-items: flex-start;
-    }
+    flex-direction: column; /* ⬅️ KUNCI */
+    gap: 10px;
+}
 
      .timeline-content img {
         width: 80px;          /* 🔥 diperkecil */
