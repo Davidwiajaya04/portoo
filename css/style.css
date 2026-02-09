@@ -1194,6 +1194,32 @@
         padding: 8px 20px;
     }
 }
+@media (max-width: 600px) {
+
+    .card-circle {
+        width: 70px;
+        height: 70px;
+        margin: 8px auto;
+    }
+
+    .card-circle-icon {
+        font-size: 22px;
+    }
+
+    .card-body {
+        padding: 22px 0px !important;
+    }
+
+    .card-heading {
+        font-size: 16px;
+    }
+
+    .card-para {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+}
+
 
 /* SECTION NO 7 */
 
