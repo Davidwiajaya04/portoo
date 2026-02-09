@@ -702,11 +702,15 @@
         align-items: flex-start;
     }
 
-    .timeline-content img {
-        width: 80px;          /* 🔥 diperkecil */
-        height: 80px;
+     .timeline-content img {
+        width: 85px;
+        height: auto;              /* ❗ JANGAN DIKUNCI */
+        max-height: 85px;          /* aman */
+        object-fit: contain;       /* ❗ logo utuh */
+        background: #f8fafc;
         padding: 6px;
-        margin-bottom: 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.12);
         flex-shrink: 0;
     }
 
