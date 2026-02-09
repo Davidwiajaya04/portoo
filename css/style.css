@@ -522,6 +522,28 @@
 }
 
 /* SECTION NO 5 */
+@media (max-width: 768px) {
+
+    .section-5 {
+        padding: 40px 15px;
+    }
+
+    .section-5-text {
+        width: 100%;              /* full width */
+        font-size: 22px;          /* lebih nyaman dibaca */
+        line-height: 1.5;
+        padding: 0 10px;
+    }
+
+    .section-5-icon {
+        margin-top: 20px;
+    }
+
+    .sec5-icon {
+        font-size: 48px;          /* icon lebih proporsional */
+    }
+}
+
 
 .section-5 {
     padding: 50px 0px 50px 0px;
