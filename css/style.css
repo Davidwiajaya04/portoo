@@ -521,233 +521,209 @@
     }
 }
 
-/* SECTION NO 5 */
-@media (max-width: 768px) {
-
-    .section-5 {
-        padding: 40px 15px;
-    }
-
-    .section-5-text {
-        width: 100%;              /* full width */
-        font-size: 22px;          /* lebih nyaman dibaca */
-        line-height: 1.5;
-        padding: 0 10px;
-    }
-
-    .section-5-icon {
-        margin-top: 20px;
-    }
-
-    .sec5-icon {
-        font-size: 48px;          /* icon lebih proporsional */
-    }
-}
-
-
+/* =========================
+   SECTION NO 5
+========================= */
 .section-5 {
-    padding: 50px 0px 50px 0px;
+    padding: 60px 0;
+    background: #ffffff;
 }
 
 .section-5-text {
     font-family: 'PT Sans', sans-serif;
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 300;
-    line-height: 1.6;
-    color: #000000;
-    width: 50%;
+    line-height: 1.5;
+    color: #000;
+    max-width: 700px;
 }
 
 .sec5-icon {
-    font-size: 100px;
+    font-size: 90px;
+    margin-top: 20px;
     animation: changing-colors 2s infinite;
 }
 
-/* ===== Pendidikan Section ===== */
+
+/* =========================
+   EDUCATION / TIMELINE
+========================= */
 .education-section {
     padding: 80px 20px;
-    background: #f2f2f2; /* NYAMBUNG ke atas */
+    background: #f2f2f2;
     color: #000;
 }
-
 
 .section-title {
     text-align: center;
     font-size: 2.2rem;
     margin-bottom: 60px;
-    color: #000000;
     font-weight: 400;
 }
 
 
+/* Timeline wrapper */
 .timeline {
     position: relative;
     max-width: 900px;
     margin: auto;
 }
 
-
-/* Garis tengah */
+/* Vertical line */
 .timeline::before {
     content: "";
     position: absolute;
-    left: 20px;
+    left: 22px;
     top: 0;
     width: 3px;
     height: 100%;
-    background: #1f2933; /* abu gelap */
-    opacity: 0.6;
+    background: #1f2933;
+    opacity: 0.5;
 }
-
 
 /* Item */
 .timeline-item {
-    display: flex;
-    margin-bottom: 50px;
     position: relative;
+    display: flex;
+    margin-bottom: 45px;
 }
 
-/* titik */
+/* Dot */
 .timeline-dot {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     background: #1f2933;
     border-radius: 50%;
     position: absolute;
-    left: 10px;          /* disesuaikan agar tetap di tengah garis */
-    top: 22px;
+    left: 13px;
+    top: 24px;
     border: 4px solid #f2f2f2;
     z-index: 2;
 }
 
-
-/* Konten box */
+/* Card */
 .timeline-content {
     background: #ffffff;
-    margin-left: 60px;
-    padding: 24px;
+    margin-left: 65px;
+    padding: 22px;
     border-radius: 16px;
-
-    /* border elegan */
-    border: 1.5px solid rgba(0, 0, 0, 0.08);
-    border-left: 4px solid #090909; /* aksen modern */
-
-    /* shadow halus */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-
-    transition: all 0.3s ease;
-    color: #1f2937;
+    border-left: 4px solid #090909;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
 }
 
 .timeline-content:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.14);
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.14);
 }
 
-
-
-/* Gambar */
+/* Image / Logo */
 .timeline-content img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 14px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-}
-@media (max-width: 768px) {
-    .timeline-content img {
-        width: 100%;
-        height: 180px;
-    }
+    width: 120px;
+    height: 120px;
+    object-fit: contain;       /* 🔥 logo aman */
+    background: #f8fafc;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 5px 14px rgba(0,0,0,0.12);
+    margin-bottom: 12px;
 }
 
-
-
-/* Judul */
+/* Text */
 .timeline-content h3 {
+    font-size: 1.2rem;
     color: #111827;
+    margin-bottom: 4px;
 }
 
 .timeline-date {
-    color: #6b7280;
     font-size: 0.85rem;
+    color: #6b7280;
 }
 
 .timeline-content p {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    line-height: 1.6;
     color: #374151;
-    line-height: 1.6;
 }
 
 
-/* Tahun */
-.timeline-date {
-    font-size: 0.9rem;
-    color: #94a3b8;
-}
-
-/* Deskripsi */
-.timeline-content p {
-    margin-top: 10px;
-    line-height: 1.6;
-}
-
-/* Responsive */
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
 @media (max-width: 768px) {
 
-    /* Section spacing */
+    /* Section 5 */
+    .section-5-text {
+        font-size: 26px;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .sec5-icon {
+        font-size: 70px;
+    }
+
+    /* Education */
     .education-section {
         padding: 60px 15px;
     }
 
     .section-title {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         margin-bottom: 40px;
     }
 
-    /* Timeline line */
+    /* Timeline */
     .timeline::before {
         left: 8px;
     }
 
-    /* Titik */
     .timeline-dot {
-        width: 18px;
-        height: 18px;
-        left: 0;
-        top: 26px;
+        width: 14px;
+        height: 14px;
+        left: 1px;
+        top: 22px;
         border-width: 3px;
     }
 
-    /* Card */
     .timeline-content {
         margin-left: 30px;
-        padding: 18px;
-        border-radius: 14px;
+        padding: 14px;
+        border-radius: 12px;
         border-left: 3px solid #090909;
     }
 
-    /* Gambar full width */
-    .timeline-content img {
-        width: 100%;
-        height: 180px;
-        margin-bottom: 14px;
+    /* Mobile layout → kecil & rapi */
+    .timeline-content {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
     }
 
-    /* Text lebih rapi */
+    .timeline-content img {
+        width: 80px;          /* 🔥 diperkecil */
+        height: 80px;
+        padding: 6px;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
     .timeline-content h3 {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
     }
 
     .timeline-date {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 
     .timeline-content p {
-        font-size: 0.95rem;
-        line-height: 1.6;
+        font-size: 0.85rem;
+        line-height: 1.5;
+        margin-top: 4px;
     }
 }
-
 
 
 
