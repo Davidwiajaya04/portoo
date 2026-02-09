@@ -673,82 +673,60 @@
     max-width: 720px;
 }
 
-/* =========================
-   MOBILE — RESPONSIVE CLEAN FIX
-========================= */
 @media (max-width: 768px) {
 
-    /* Judul section */
-    .section-title {
-        font-size: 1.7rem;
-        margin-bottom: 36px;
-        text-align: center;
-    }
-
-    /* Garis timeline */
+    /* GARIS TIMELINE */
     .timeline::before {
-        left: 12px;
-        width: 2px;
-    }
-
-    .timeline-item {
-        margin-bottom: 28px;
+        left: 10px;
     }
 
     .timeline-dot {
-        width: 12px;
-        height: 12px;
-        left: 6px;
-        top: 22px;
-        border-width: 3px;
+        left: 4px;
+        top: 20px;
     }
 
     /* CARD */
-    .timeline-content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 44px;
-        padding: 16px 16px 18px;
-        gap: 10px;
+    .timeline-item .timeline-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
 
-        /* ⛔ MATIKAN STYLE DESKTOP */
-        border-left: none;
-        min-height: unset;
+        margin-left: 40px !important;
+        padding: 16px !important;
+        gap: 8px !important;
+
+        border-left: none !important;
     }
 
-    /* Logo */
-    .timeline-content img {
-        width: 64px;
-        height: 64px;
-        padding: 8px;
-        border-radius: 12px;
-        margin-bottom: 4px;
+    /* LOGO — WAJIB DI ATAS */
+    .timeline-item .timeline-content img {
+        display: block !important;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 6px;
     }
 
-    /* Text */
-    .timeline-text {
-        width: 100%;
-        text-align: left;
+    /* TEXT — DI BAWAH LOGO */
+    .timeline-item .timeline-text {
+        width: 100% !important;
+        display: block !important;
+        text-align: left !important;
     }
 
-    .timeline-text h3 {
+    .timeline-item .timeline-text h3 {
         font-size: 0.95rem;
-        font-weight: 600;
         margin-bottom: 2px;
     }
 
-    .timeline-text .timeline-date {
+    .timeline-item .timeline-text .timeline-date {
         font-size: 0.85rem;
         font-weight: 700;
         margin-bottom: 6px;
-        color: #1f2937;
     }
 
-    .timeline-text p {
+    .timeline-item .timeline-text p {
         font-size: 0.72rem;
         line-height: 1.5;
-        color: #4b5563;
     }
 }
 
