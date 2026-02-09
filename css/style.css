@@ -674,7 +674,7 @@
 }
 
 /* =========================
-   MOBILE — RESPONSIVE
+   MOBILE — RESPONSIVE (REVISI)
 ========================= */
 @media (max-width: 768px) {
 
@@ -700,7 +700,7 @@
         flex-direction: column;
         margin-left: 56px;
         padding: 16px 18px;
-        gap: 10px;
+        gap: 8px;
         border-left-width: 4px;
     }
 
@@ -711,18 +711,25 @@
         border-radius: 12px;
     }
 
+    /* Nama sekolah */
     .timeline-text h3 {
         font-size: 0.95rem;
+        font-weight: 600;
     }
 
-    .timeline-date {
-        font-size: 0.75rem;
-        margin-bottom: 6px;
+    /* 🔥 TAHUN — DIBESARKAN & BOLD (HP SAJA) */
+    .timeline-text .timeline-date {
+        font-size: 0.85rem;     /* lebih besar */
+        font-weight: 700;       /* bold */
+        margin-bottom: 4px;
+        color: #1f2933;
     }
 
+    /* 🔽 DESKRIPSI — DIPERKECIL (HP SAJA) */
     .timeline-text p {
-        font-size: 0.82rem;
-        line-height: 1.55;
+        font-size: 0.70rem;     /* diperkecil */
+        line-height: 1.45;
+        color: #4b5563;
     }
 }
 
