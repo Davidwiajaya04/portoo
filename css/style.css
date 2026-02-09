@@ -674,7 +674,7 @@
 }
 
 /* =========================
-   MOBILE — RESPONSIVE (REVISI)
+   MOBILE — RESPONSIVE (FIX FINAL)
 ========================= */
 @media (max-width: 768px) {
 
@@ -698,41 +698,53 @@
     .timeline-content {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;   /* 🔥 PAKSA KE KIRI */
         margin-left: 56px;
         padding: 16px 18px;
-        gap: 8px;
+        gap: 6px;
         border-left-width: 4px;
     }
 
+    /* LOGO — TETAP KIRI ATAS */
     .timeline-content img {
-        width: 72px;
-        height: 72px;
-        padding: 8px;
-        border-radius: 12px;
+        width: 68px;
+        height: 68px;
+        padding: 6px;
+        border-radius: 10px;
+        align-self: flex-start;    /* 🔥 jangan ke tengah */
+    }
+
+    /* TEXT WRAPPER — PAKSA RATA KIRI */
+    .timeline-text {
+        width: 100%;
+        text-align: left;
     }
 
     /* Nama sekolah */
     .timeline-text h3 {
-        font-size: 0.95rem;
+        font-size: 0.92rem;
         font-weight: 600;
+        margin-bottom: 2px;
     }
 
-    /* 🔥 TAHUN — DIBESARKAN & BOLD (HP SAJA) */
+    /* 🔥 TAHUN — LEBIH BESAR + BOLD (TANPA GESER) */
     .timeline-text .timeline-date {
-        font-size: 0.85rem;     /* lebih besar */
-        font-weight: 700;       /* bold */
+        font-size: 0.82rem;
+        font-weight: 700;
+        display: block;
         margin-bottom: 4px;
         color: #1f2933;
+        text-align: left;          /* 🔥 pastikan tidak center */
     }
 
-    /* 🔽 DESKRIPSI — DIPERKECIL (HP SAJA) */
+    /* 🔽 DESKRIPSI — BENAR-BENAR DIPERKECIL */
     .timeline-text p {
-        font-size: 0.70rem;     /* diperkecil */
+        font-size: 0.40rem;        /* LEBIH KECIL DARI SEBELUMNYA */
         line-height: 1.45;
         color: #4b5563;
+        margin: 0;
     }
 }
-
 
 
 /* Masonry Grid */
