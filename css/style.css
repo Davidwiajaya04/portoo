@@ -702,17 +702,19 @@
         align-items: flex-start;
     }
 
-     .timeline-content img {
-        width: 85px;
-        height: auto;              /* ❗ JANGAN DIKUNCI */
-        max-height: 85px;          /* aman */
-        object-fit: contain;       /* ❗ logo utuh */
+      .timeline-content img {
+        width: 100%;
+        max-width: 120px;     /* kecil & proporsional */
+        height: auto;         /* ❗ tidak kepotong */
+        object-fit: contain;  /* ❗ logo utuh */
+        display: block;
+        margin-bottom: 10px;
         background: #f8fafc;
         padding: 6px;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-        flex-shrink: 0;
     }
+
 
     .timeline-content h3 {
         font-size: 0.95rem;
