@@ -674,77 +674,69 @@
 }
 
 /* =========================
-   MOBILE — RESPONSIVE (FIX FINAL)
+   MOBILE — FINAL FIX (RAPI)
 ========================= */
 @media (max-width: 768px) {
 
-    .section-title {
-        font-size: 1.9rem;
-        margin-bottom: 48px;
-    }
-
-    .timeline::before {
-        left: 6px;
-    }
-
-    .timeline-dot {
-        width: 12px;
-        height: 12px;
-        left: -1px;
-        top: 26px;
-        border-width: 3px;
-    }
-
     .timeline-content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;   /* 🔥 PAKSA KE KIRI */
         margin-left: 56px;
-        padding: 16px 18px;
-        gap: 6px;
-        border-left-width: 4px;
+        padding: 14px 16px;
+        border-radius: 14px;
     }
 
-    /* LOGO — TETAP KIRI ATAS */
-    .timeline-content img {
-        width: 68px;
-        height: 68px;
+    /* HEADER: LOGO + TEXT SEJAJAR */
+    .timeline-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 6px;
+    }
+
+    /* LOGO KIRI */
+    .timeline-header img {
+        width: 56px;
+        height: 56px;
         padding: 6px;
         border-radius: 10px;
-        align-self: flex-start;    /* 🔥 jangan ke tengah */
+        object-fit: contain;
+        background: #f9fafb;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+        flex-shrink: 0;
     }
 
-    /* TEXT WRAPPER — PAKSA RATA KIRI */
-    .timeline-text {
-        width: 100%;
+    /* TEXT KANAN LOGO */
+    .timeline-meta {
+        display: flex;
+        flex-direction: column;
         text-align: left;
     }
 
-    /* Nama sekolah */
-    .timeline-text h3 {
-        font-size: 0.92rem;
+    /* NAMA SEKOLAH */
+    .timeline-meta h3 {
+        font-size: 0.88rem;
         font-weight: 600;
-        margin-bottom: 2px;
+        margin: 0;
+        line-height: 1.25;
     }
 
-    /* 🔥 TAHUN — LEBIH BESAR + BOLD (TANPA GESER) */
-    .timeline-text .timeline-date {
-        font-size: 0.82rem;
+    /* TAHUN — KIRI & TEGAS */
+    .timeline-meta .timeline-date {
+        font-size: 0.72rem;
         font-weight: 700;
-        display: block;
-        margin-bottom: 4px;
         color: #1f2933;
-        text-align: left;          /* 🔥 pastikan tidak center */
+        margin-top: 2px;
     }
 
-    /* 🔽 DESKRIPSI — BENAR-BENAR DIPERKECIL */
-    .timeline-text p {
-        font-size: 0.40rem;        /* LEBIH KECIL DARI SEBELUMNYA */
+    /* DESKRIPSI — DIPERKECIL */
+    .timeline-desc {
+        font-size: 0.64rem;   /* 🔥 lebih kecil */
         line-height: 1.45;
         color: #4b5563;
         margin: 0;
+        text-align: left;
     }
 }
+
 
 
 /* Masonry Grid */
