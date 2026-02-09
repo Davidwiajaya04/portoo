@@ -1002,9 +1002,9 @@
 }
 
 .custom-card {
-    padding: 0px 15px;
+    padding: 0px 10px;
     border: none !important;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .card-body {
@@ -1136,31 +1136,39 @@
         padding: 8px 20px;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 576px) {
 
-    .card-circle {
-        width: 70px;
-        height: 70px;
-        margin: 8px auto;
-    }
-
-    .card-circle-icon {
-        font-size: 22px;
+    /* Card lebih kecil */
+    .custom-card {
+        padding: 0 6px;
     }
 
     .card-body {
-        padding: 22px 0px !important;
+        padding: 16px 0 !important;
     }
 
+    /* Lingkaran ikon */
+    .card-circle {
+        width: 60px;
+        height: 60px;
+        margin: 6px auto;
+    }
+
+    .card-circle-icon {
+        font-size: 20px;
+    }
+
+    /* Teks */
     .card-heading {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .card-para {
-        font-size: 13px;
-        margin-top: 10px;
+        font-size: 12px;
+        margin-top: 8px;
     }
 }
+
 @media (max-width: 576px) {
     .portfolio-grid {
         grid-template-columns: repeat(2, 1fr); /* 🔥 1 layar = 2 kotak */
