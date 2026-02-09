@@ -650,48 +650,58 @@
 
 
 /* =========================
-   RESPONSIVE MOBILE
+   RESPONSIVE MOBILE (FINAL)
 ========================= */
 @media (max-width: 768px) {
 
+    /* Card timeline */
     .timeline-content {
         display: flex;
-        flex-direction: column;   /* ⬅️ STACK */
+        flex-direction: column;
         align-items: flex-start;
-        margin-left: 30px;
-        padding: 14px;
-        gap: 8px;
+        margin-left: 28px;
+        padding: 12px 14px;          /* lebih rapih */
+        gap: 6px;                    /* jarak lebih halus */
+        border-radius: 14px;
     }
 
+    /* Logo sekolah */
     .timeline-content img {
-        width: 80px;
-        height: 80px;
-        object-fit: contain;      /* ⬅️ LOGO TIDAK KEPOTONG */
-        border-radius: 12px;
-        align-self: flex-start;   /* logo di kiri atas */
-    }
-
-    .timeline-text {
-        width: 100%;              /* ⬅️ TEKS FULL BAWAH */
-    }
-
-    .timeline-text h3 {
-        font-size: 0.95rem;
+        width: 72px;                 /* sedikit lebih kecil */
+        height: 72px;
+        object-fit: contain;
+        border-radius: 10px;
         margin-bottom: 2px;
     }
 
-    .timeline-date {
-        font-size: 0.75rem;
-        color: #6b7280;
+    /* Text wrapper */
+    .timeline-text {
+        width: 100%;
     }
 
+    /* Judul sekolah */
+    .timeline-text h3 {
+        font-size: 0.9rem;           /* lebih rapi */
+        font-weight: 600;
+        margin-bottom: 2px;
+        line-height: 1.3;
+    }
+
+    /* Tahun */
+    .timeline-date {
+        font-size: 0.7rem;
+        color: #6b7280;
+        margin-bottom: 4px;
+    }
+
+    /* Deskripsi */
     .timeline-text p {
-        font-size: 0.85rem;
-        line-height: 1.5;
-        margin-top: 4px;
+        font-size: 0.8rem;           /* 🔥 DIPERKECIL */
+        line-height: 1.45;
+        color: #374151;
+        margin-top: 2px;
     }
 }
-
 
 
 /* Masonry Grid */
